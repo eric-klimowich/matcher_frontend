@@ -257,7 +257,7 @@ function addSingleGameToDom(game){
     <td class='table-font'></td>
     <td class='table-font'>${game.player}</td>
     <td class='table-font'>${game.time}</td>
-    <td class='table-font'>${game.updated_at}</td>
+    <td class='table-font'>${new Date(game.updated_at).toLocaleDateString()}</td>
   </tr>
   `
 }
